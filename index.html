@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ClickR Admin UI</title>
+    <meta charset="utf8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1"
+    >
+
+    <style>
+        html,body,#mount{
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        #mount{
+            overflow-y: auto;
+
+        }
+
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .center{
+            position: absolute;
+            left:50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                width: 750px;
+            }
+        }
+        @media (min-width: 992px) {
+            .container {
+                width: 970px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .container {
+                width: 1170px;
+            }
+        }
+
+        h1,h2,h3,h4,h5,h6{
+            font-weight:300;
+        }
+
+        .login-wrapper{
+            height:100%;
+            width:100%;
+            position: relative;
+            background: url(https://hd.unsplash.com/photo-1420161900862-9a86fa1f5c79) right center no-repeat;
+            background-size: cover;
+        }
+
+        .login-wrapper>.login-content{
+            width: 50%;
+            height: 100%;
+
+            margin-left:50%;
+            background: #fff;
+        }
+
+        .login-wrapper .inner{
+            padding: 4rem 5rem 0 5rem;
+        }
+
+    </style>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    <link href='/grid.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="mount"></div>
+<script src="/bundle.js"></script>
+</body>
+</html>
